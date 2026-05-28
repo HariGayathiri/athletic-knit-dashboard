@@ -1,0 +1,12 @@
+{
+  "uid": "athletic_knit_extension_card",
+  "type": "card",
+  "config": {
+    "name": "Athletic Knit CRM Cockpit",
+    "location": "crm.record.tab",
+    "entrypoint": "/app/cards/NewCard.tsx",
+    "objectTypes": [
+      "contacts"
+    ]
+  }
+}

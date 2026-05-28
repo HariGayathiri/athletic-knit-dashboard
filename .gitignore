@@ -1,0 +1,36 @@
+node_modules/
+dist/
+.env
+.env.local
+.DS_Store
+.vscode/
+netlify/functions/node_modules/
+# ============================================================
+# ATHLETIC KNIT CRM DASHBOARD — .gitignore
+# ============================================================
+
+# Node packages (300-500MB — never upload, Netlify installs automatically)
+node_modules/
+
+# Built production output (never upload manually — Netlify builds this)
+dist/
+
+# Secret keys and tokens (NEVER commit these to GitHub)
+.env
+.env.local
+.env.production
+.env.development.local
+.env.test.local
+.env.production.local
+
+# OS system files (not needed by other developers)
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# VS Code settings (personal preferences — not project files)
+.vscode/settings.json
+
+# Logs
+*.log
+npm-debug.log*
