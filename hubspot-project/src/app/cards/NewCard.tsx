@@ -17,8 +17,8 @@ const Extension = ({ context, actions }: ExtensionProps) => {
     // React dashboard can fetch live data for this exact contact
     const contactId = context?.crm?.objectId;
     const iframeUrl = contactId
-      ? `https://thriving-maamoul-fa5dc1.netlify.app?contactId=${contactId}`
-      : 'https://thriving-maamoul-fa5dc1.netlify.app';
+      ? `https://athletic-knit-dashboard.vercel.app?contactId=${contactId}`
+      : 'https://athletic-knit-dashboard.vercel.app';
 
     actions.openIframeModal({
       uri: iframeUrl,

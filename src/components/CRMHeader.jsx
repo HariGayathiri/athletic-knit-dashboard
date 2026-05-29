@@ -33,23 +33,21 @@ export default function CRMHeader({ activeProfile, activePipelineValue, overdueC
         <div>
           <div className="flex items-center space-x-2 leading-none">
             <span className="text-[8px] uppercase tracking-widest font-black text-slate-500">Sales Execution Workspace</span>
-            <span className="text-[9px] text-slate-400 font-bold">| Rep: Sarah Jenkins</span>
+            <span className="text-[9px] text-slate-400 font-bold">
+              | Rep: {activeProfile.contactPerson || 'Loading...'}
+            </span>
           </div>
           <div className="flex items-center space-x-2.5 mt-1.5">
-            <select
-              value={activeProfile.name}
-              onChange={(e) => onSwitchProfile(e.target.value)}
-              className="bg-transparent text-white text-sm font-black border-none p-0 focus:ring-0 focus:outline-none cursor-pointer hover:text-orange-400 transition-colors"
-            >
-              <option value="Apex Hockey Distributors" className="text-slate-800 font-bold">🏢 Apex Hockey Distributors</option>
-              <option value="Elite Sports Apparel" className="text-slate-800 font-bold">🏢 Elite Sports Apparel</option>
-            </select>
+            <span className="text-white text-sm font-black">
+              🏢 {activeProfile.name || 'Loading contact...'}
+            </span>
             <span className="bg-sky-500/10 text-sky-400 border border-sky-500/20 px-2 py-0.5 rounded text-[8px] font-black uppercase tracking-widest select-none leading-none">
-              ARTWORK PENDING
+              {activeProfile.artworkStatus || 'ACTIVE'}
             </span>
           </div>
         </div>
       </div>
+
 
       {/* KPI stats strip */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 w-full xl:w-auto">
