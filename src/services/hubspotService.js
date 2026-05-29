@@ -5,8 +5,8 @@
 // to bypass CORS restrictions. The proxy calls HubSpot server-side securely.
 // ============================================================================
 
-// All requests go through the Netlify serverless proxy (bypasses CORS)
-const PROXY = '/.netlify/functions/hubspot';
+// All requests go through the Vercel serverless API route (bypasses CORS)
+const PROXY = '/api/hubspot';
 
 /**
  * Calls the Netlify proxy, which calls HubSpot API server-side
