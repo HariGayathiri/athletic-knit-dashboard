@@ -1,7 +1,6 @@
 import React from 'react';
 import { EmptyState, Button, Text, hubspot } from '@hubspot/ui-extensions';
 
-// Define strict types for components to resolve the TSX Parameter Implicitly Any error
 interface ExtensionProps {
   context: any;
   actions: any;

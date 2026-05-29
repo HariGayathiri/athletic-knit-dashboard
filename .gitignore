@@ -2,14 +2,14 @@
 # ATHLETIC KNIT CRM DASHBOARD — .gitignore
 # ============================================================
 
-# Node packages (never upload — Netlify installs automatically)
+# Node packages — Vercel installs these automatically on deploy
 node_modules/
-netlify/functions/node_modules/
 
-# Built production output (never upload — Netlify builds this)
+# Built production output — Vercel builds this automatically
 dist/
 
-# Secret keys and tokens (NEVER commit to GitHub)
+# Secret keys and tokens — NEVER commit these to GitHub
+# Set HUBSPOT_PRIVATE_TOKEN in Vercel Dashboard > Environment Variables
 .env
 .env.local
 .env.production
